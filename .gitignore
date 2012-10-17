@@ -161,3 +161,16 @@ pip-log.txt
 
 # Mac crap
 .DS_Store
+
+#################
+## CodeIgniter
+#################
+
+*user_guide
+*system/logs/*
+*system/logs/log-*.php
+*system/logs/!index.html
+*system/cache/*
+*mailing/*
+
+*wsdls/* 
