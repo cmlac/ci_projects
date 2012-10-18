@@ -26,13 +26,11 @@
     </head>
 	
     <body style='background-color: #EDEDED;'>
-<<<<<<< HEAD
+
 		<text> <!-- is this a proper html tag? -->
 		<?php $this->load->view('includes/top_bar');?>
 		</text>
 	<div class="container">
-=======
->>>>>>> f6021d7a1552ecfb95e796163e68047ca03ad4ce
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
@@ -45,11 +43,10 @@
 		     <header>
                 <?php $this->load->view('includes/header');?>
             </header>
-<<<<<<< HEAD
+
         
-=======
         <div class="container">
->>>>>>> f6021d7a1552ecfb95e796163e68047ca03ad4ce
+
 		     <div class="container-fluid">
 		  <div class="row-fluid">
 			<div class="span2">
