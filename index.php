@@ -202,9 +202,13 @@ if (defined('ENVIRONMENT'))
 require_once BASEPATH.'core/CodeIgniter.php';
 
 /* End of file index.php */
+<<<<<<< HEAD
 /* Location: ./index.php */
 
 
 /*Test Message*/
 
 /*Tung Account Test*/
+=======
+/* Location: ./index.php */
+>>>>>>> f6021d7a1552ecfb95e796163e68047ca03ad4ce

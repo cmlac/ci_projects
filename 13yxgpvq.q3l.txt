@@ -1,0 +1,36 @@
+Merge branch 'master' of https://github.com/cmlac-website/Test
+
+Conflicts:
+	.gitignore
+	application/config/autoload.php
+	application/controllers/home.php
+	application/views/includes/header.php
+	application/views/includes/text.php
+	application/views/template.php
+	index.php
+#
+# It looks like you may be committing a merge.
+# If this is not correct, please remove the file
+#	.git/MERGE_HEAD
+# and try again.
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch and 'origin/master' have diverged,
+# and have 9 and 4 different commits each, respectively.
+#
+# Changes to be committed:
+#
+#	modified:   .gitignore
+#	new file:   CMLAC/CMLAC.clpprj
+#	modified:   application/config/autoload.php
+#	modified:   application/controllers/home.php
+#	modified:   application/views/includes/header.php
+#	modified:   application/views/includes/text.php
+#	modified:   application/views/template.php
+#	new file:   img/welcome_txt.png
+#	modified:   index.php
+#
+

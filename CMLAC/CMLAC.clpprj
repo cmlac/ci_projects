@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="C:\xampp\htdocs\Test\CMLAC\CMLAC.clpprj">
+	<settings><PM_URL><![CDATA[C:/xampp/htdocs/]]></PM_URL><PM_HOME_URL><![CDATA[C:/xampp/htdocs/]]></PM_HOME_URL><PM_LIBS><![CDATA[C:\xampp\htdocs\Test;]]></PM_LIBS><PM_FTP_CONNECTION><![CDATA[]]></PM_FTP_CONNECTION><PM_FTP_DIR><![CDATA[]]></PM_FTP_DIR><PM_FTP_UPLOAD_ON_SAVE><![CDATA[INT:0]]></PM_FTP_UPLOAD_ON_SAVE></settings><removed value=";"/><added value=""/><codestructure version="4.3">
+		<phptree>
+		</phptree>
+		<jstree>
+		</jstree>
+		<file name="C:\xampp\htdocs\Test\CMLAC\CMLAC.clpprj" crc="-1864372415"/>
+	</codestructure><cakedata>
+	</cakedata>
+	<dplmenupath>
+	</dplmenupath><smartyassings>
+	</smartyassings></project>

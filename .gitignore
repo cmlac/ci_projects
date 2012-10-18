@@ -162,6 +162,7 @@ pip-log.txt
 # Mac crap
 .DS_Store
 
+<<<<<<< HEAD
 #############
 ## CodeIgniter
 #############
@@ -174,3 +175,17 @@ pip-log.txt
 
 #Project Files
 .clpprj
+=======
+#################
+## CodeIgniter
+#################
+
+*user_guide
+*system/logs/*
+*system/logs/log-*.php
+*system/logs/!index.html
+*system/cache/*
+*mailing/*
+
+*wsdls/* 
+>>>>>>> f6021d7a1552ecfb95e796163e68047ca03ad4ce
