@@ -26,7 +26,7 @@
     </head>
 	
     <body style='background-color: #EDEDED;'>
-		<text>
+		<text> <!-- is this a proper html tag? -->
 		<?php $this->load->view('includes/top_bar');?>
 		</text>
 	<div class="container">

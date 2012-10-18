@@ -7,7 +7,7 @@
 				<ul class="nav">
 				<li class="active"><a href="#">Home</a></li>
 				<li><a href="#">Link</a></li>
-				<li><a href="#">Link</a></li>
+				<li><?php echo anchor('cmlacCal/display', 'Calendar')?></li>
 				</ul>
 				</div>
 			</div>

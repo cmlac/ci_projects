@@ -161,3 +161,16 @@ pip-log.txt
 
 # Mac crap
 .DS_Store
+
+#############
+## CodeIgniter
+#############
+
+
+
+#############
+## CodeLobster
+#############
+
+#Project Files
+.clpprj
