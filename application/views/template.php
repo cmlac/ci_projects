@@ -57,11 +57,8 @@
 			  positive manner, regardless of athletic capability. Little Athletics takes place on Saturday mornings from <br />
 			  October to March, excluding the Christmas holiday period.<br />
 			  </p>
-<<<<<<< HEAD
-			   <button class="btn btn-large btn-primary" type="button">Register Here</button>
-=======
+			   <button class="btn btn-large btn-primary" type="button ">Register Here</button>
 			  <button type="button" class="btn">Register here</button>
->>>>>>> f6021d7a1552ecfb95e796163e68047ca03ad4ce
 			</div>
 			    <body>
 			<div class="span10">
