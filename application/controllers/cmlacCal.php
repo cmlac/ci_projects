@@ -1,6 +1,11 @@
 <?php
 	class cmlacCal extends CI_Controller
 	{
+		function index ()
+		{
+		
+		}
+		
 		function display($year  = null, $month = null)	
 		{
 			if(!$year)//if year and month is null, use todays year and month, 
@@ -23,7 +28,6 @@
 				}
 			
 			$data['calendar'] = $this->Calendar_model->generate($year, $month);
-			
 			$this->load->view('cal_view', $data);
 		}
 	}
