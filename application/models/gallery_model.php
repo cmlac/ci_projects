@@ -7,8 +7,8 @@ class Gallery_model extends CI_Model {
 	function Gallery_model() {
 		parent::__construct();
 		
-		$this->gallery_path = realpath(APPPATH . '../images');
-		$this->gallery_path_url = base_url().'images/';
+		$this->gallery_path = realpath(APPPATH . '../img/gallery/');
+		$this->gallery_path_url = base_url().'img/gallery/';
 	}
 	
 	function do_upload() {

@@ -8,6 +8,9 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<script src="js/jquery-1.7.2.min.js"></script>
+		<script src="js/lightbox.js"></script>
+		<link href="css/lightbox.css" rel="stylesheet" />
 		<title>CMLAC Image Gallery</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width">
@@ -105,13 +108,21 @@
 							Register Here
 						</button>
 					</div>
+					
 
 					<!-- Image Gallery begins-->
 					<div id="gallery">
+						
 						<?php if (isset($images) && count($images)):
+						
 						foreach($images as $image):	?>
-						<div class="thumb">
-							<a href="<?php echo $image['url']; ?>"> <img src="<?php echo $image['thumb_url']; ?>" /> </a>
+						
+						<div class="thumbnails"><!--applying thumbnail style from bootstrap-->
+							  <li class="span4">
+								<a title="CaptionPlaceHolder" rel="lightbox" class="thumbnail" href="<?php echo $image['url']; ?>"> <img src="<?php echo $image['thumb_url']; ?>" /> </a>
+								<!--rel="lightbox" here means when any of the thumbnails are clicked, it activates the slideshow (using lightbox plugin)-->
+							</li>
+						
 						</div>
 						<?php endforeach; else: ?>
 						<div id="blank_gallery">
@@ -119,15 +130,33 @@
 						</div>
 						<?php endif; ?>
 					</div>
-
-					<div id="upload">
+					
+					<!-- modal window for uploading images begins-->
+					<a type="button" class="btn btn-primary" data-loading-text="Loading..." " href="#image_upload_modal" data-toggle="modal">Upload Image</a>
+					
+					<div class="modal fade" id="image_upload_modal">
+					  <div class="modal-header">
+					    <a class="close" data-dismiss="modal">&times;</a>
+					    <h3>Image Upload</h3>
+					  </div>
+					  <div class="modal-body">
+					   <div id="upload">
 						<?php
 						echo form_open_multipart('gallery');
+						echo form_label('Image Upload', 'userfile');
 						echo form_upload('userfile');
 						echo form_submit('upload', 'Upload');
 						echo form_close();
 						?>
 					</div>
+					  </div>
+					 <!-- modal window ends-->
+					  <div class="modal-footer">
+					    <a href="#" class="btn" data-dismiss="modal">Close</a>
+					  </div>
+					</div>
+
+	
 					<!-- Image Gallery ends-->
 
 					<hr>
