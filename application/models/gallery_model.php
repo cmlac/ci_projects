@@ -23,6 +23,16 @@ class Gallery_model extends CI_Model {
 		$this->upload->do_upload();
 		$image_data = $this->upload->data();
 		
+		//---upload url to database	begins
+		$insert_data = array(
+                    'name' => $image_data['file_name'],
+                    'path' => $image_data['full_path'],
+                    'thumb_path'=> $image_data['file_path'] . 'thumbs/'. $image_data['file_name']
+                     );
+
+       $this->db->insert('igallery', $insert_data);//load array to database 
+		//---upload url to database ends
+		
 		$config = array(
 			'source_image' => $image_data['full_path'],
 			'new_image' => $this->gallery_path . '/thumbs',
