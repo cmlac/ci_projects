@@ -6,7 +6,7 @@
 				<a class="brand" href="#">Title</a>
 				<ul class="nav">
 					<li class="active"><?php echo anchor('#','Home')?></li>
-					<li><?php echo anchor('#', 'Link')?></li>
+					<li><?php echo anchor('gallery', 'Gallery')?></li>
 					<li><?php echo anchor('cmlacCal/display','Events') ?></li>
 				</ul>
 			</div>
