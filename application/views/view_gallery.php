@@ -113,18 +113,18 @@
 					<!-- Image Gallery begins-->
 					<div id="gallery">
 						
-						<?php if (isset($images) && count($images)):
+						<?php if (isset($images) && count($images)):?>
+						<ul>
+						<?php foreach($images as $image):	?>
 						
-						foreach($images as $image):	?>
-						
-						<div class="thumbnails"><!--applying thumbnail style from bootstrap-->
 							  <li class="span4">
 								<a title="CaptionPlaceHolder" rel="lightbox" class="thumbnail" href="<?php echo $image['url']; ?>"> <img src="<?php echo $image['thumb_url']; ?>" /> </a>
 								<!--rel="lightbox" here means when any of the thumbnails are clicked, it activates the slideshow (using lightbox plugin)-->
-							</li>
+							  </li>
 						
-						</div>
-						<?php endforeach; else: ?>
+						<?php endforeach; ?>
+						</ul>
+						<?php else:?>
 						<div id="blank_gallery">
 							No Images in this album - Please Upload an Image
 						</div>
