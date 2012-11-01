@@ -27,5 +27,4 @@ class Gallery extends CI_Controller {
 	{
 		$this->load->view('upload_image');
 	}
-	
 }

@@ -20,7 +20,7 @@
 			}
 			#gallery, #upload {
 				margin: 10px auto;
-				width: 570px;
+				width: 100%;
 				padding: 10px;
 			}
 			#blank_gallery {
@@ -38,6 +38,11 @@
 			}
 			.thumb:hover {
 				outline: 1px solid rgb(27,117,187);
+			}
+			
+			#gallery li.span4
+			{
+				margin-left: 0px;
 			}
 		</style>
 
@@ -109,7 +114,7 @@
 						</button>
 					</div>
 					
-
+					<div class="span10">
 					<!-- Image Gallery begins-->
 					<div id="gallery">
 						
@@ -118,7 +123,7 @@
 						<?php foreach($images as $image):	?>
 						
 							  <li class="span4">
-								<a title="CaptionPlaceHolder" rel="lightbox" class="thumbnail" href="<?php echo $image['url']; ?>"> <img src="<?php echo $image['thumb_url']; ?>" /> </a>
+								<a title="CaptionPlaceHolder" rel="lightbox" class="thumbnail" href="<?php echo $image['full']; ?>"> <img src="<?php echo $image['thumb']; ?>" /> </a>
 								<!--rel="lightbox" here means when any of the thumbnails are clicked, it activates the slideshow (using lightbox plugin)-->
 							  </li>
 						
@@ -130,7 +135,7 @@
 						</div>
 						<?php endif; ?>
 					</div>
-					
+					</div><!-- end span10 -->
 					<!-- modal window for uploading images begins-->
 					<a type="button" class="btn btn-primary" data-loading-text="Loading..." " href="#image_upload_modal" data-toggle="modal">Upload Image</a>
 					
