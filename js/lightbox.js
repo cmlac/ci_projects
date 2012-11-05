@@ -199,24 +199,12 @@ lightbox = new Lightbox options
       $lightbox.find('.lb-image, .lb-nav, .lb-prev, .lb-next, .lb-dataContainer, .lb-numbers, .lb-caption').hide();
       $lightbox.find('.lb-outerContainer').addClass('animating');
       preloader = new Image;
-	  //--Code modified to make enlarged image fit to screen begins
-     preloader.onload = function() {
-	$image.attr('src', _this.album[_this.currentImageIndex].link);
-	if (preloader.width > window.innerWidth * 0.9) {
-	preloader.height = (window.innerWidth * 0.9 * preloader.height) / preloader.width;
-	preloader.width = window.innerWidth * 0.9;
-	}
-
-	if (preloader.height > window.innerHeight * 0.8) {
-	preloader.width = (window.innerHeight * 0.8 * preloader.width) / preloader.height;
-	preloader.height = window.innerHeight * 0.8;
-	}
-	$image.width = preloader.width;
-	$image.height = preloader.height;
-	$image.attr('width', preloader.width + "px");
-	return _this.sizeContainer(preloader.width, preloader.height);
-	};
-	//--Code modified to make enlarged image fit to screen ends
+      preloader.onload = function() {
+        $image.attr('src', _this.album[imageNumber].link);
+        $image.width = preloader.width;
+        $image.height = preloader.height;
+        return _this.sizeContainer(preloader.width, preloader.height);
+      };
       preloader.src = this.album[imageNumber].link;
       this.currentImageIndex = imageNumber;
     };
